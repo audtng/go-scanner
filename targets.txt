@@ -48,4 +48,14 @@ https://github.com/jitsi/tpl.git
 https://github.com/DopplerHQ/cli.git
 https://github.com/kubernetes/utils.git
 https://github.com/kubernetes/test-infra.git
-
+https://github.com/smartcontractkit/chainlink.git
+https://github.com/bitwarden/f-droid.git
+https://github.com/bitwarden/sm-kubernetes.git
+https://github.com/bitwarden/terraform-provider-bitwarden-secrets.git
+https://github.com/bitwarden/sdk-go.git
+https://gitlab.com/gitlab-org/gitlab-shell.git
+https://gitlab.com/gitlab-org/gitlab-runner.git
+https://gitlab.com/gitlab-org/gitlab-pages.git
+https://gitlab.com/gitlab-org/gitaly.git
+https://github.com/coinbase/cb-mpc-go.git
+https://github.com/slackhq/nebula.git

@@ -1,0 +1,4 @@
+[ERROR] Invalid YAML file final_rules.yaml:
+	mapping values are not allowed here
+	  in "<file>", line 19, column 28
+[ERROR] invalid configuration file found (1 configs were invalid)

@@ -1,0 +1,226 @@
+https://github.com/anthropics/anthropic-cli.git
+{
+  "path": "/tmp/anthropic-cli/internal/declarative/core/fetch.go",
+  "line": 362,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-cli/internal/declarative/core/fetch.go",
+  "line": 362,
+  "snippet": "requires login"
+}
+https://github.com/anthropics/anthropic-sdk-go.git
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/fs.go",
+  "line": 123,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/fs.go",
+  "line": 274,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/fs.go",
+  "line": 313,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 202,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 202,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 202,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 207,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 207,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 207,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 338,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 338,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 343,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/anthropic-sdk-go/tools/agenttoolset/skillarchive.go",
+  "line": 343,
+  "snippet": "requires login"
+}
+https://github.com/anthropics/argo-cd.git
+{
+  "path": "/tmp/argo-cd/util/io/files/tar.go",
+  "line": 132,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/argo-cd/util/io/files/tar.go",
+  "line": 132,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/argo-cd/util/io/files/tar.go",
+  "line": 157,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/argo-cd/util/io/files/tar.go",
+  "line": 157,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/argo-cd/util/io/files/tar.go",
+  "line": 167,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/argo-cd/util/io/files/tar.go",
+  "line": 167,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/argo-cd/util/io/files/tar.go",
+  "line": 172,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/argo-cd/util/io/files/tar.go",
+  "line": 172,
+  "snippet": "requires login"
+}
+https://github.com/anthropics/terragrunt.git
+{
+  "path": "/tmp/terragrunt/internal/engine/engine.go",
+  "line": 1035,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/terragrunt/internal/engine/engine.go",
+  "line": 1042,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/terragrunt/internal/engine/engine.go",
+  "line": 1046,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/terragrunt/internal/tf/cache/controllers/downloader.go",
+  "line": 53,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/terragrunt/internal/tf/cache/controllers/downloader.go",
+  "line": 53,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/terragrunt/internal/tf/cache/controllers/downloader.go",
+  "line": 53,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/terragrunt/internal/tf/cache/controllers/downloader.go",
+  "line": 53,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/terragrunt/internal/util/file.go",
+  "line": 652,
+  "snippet": "requires login"
+}
+https://github.com/anthropics/rclone.git
+{
+  "path": "/tmp/rclone/backend/cache/storage_persistent.go",
+  "line": 583,
+  "snippet": "requires login"
+}
+https://github.com/smartcontractkit/chainlink.git
+{
+  "path": "/tmp/chainlink/core/scripts/cre/environment/environment/chip_ingress_stack.go",
+  "line": 275,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/core/scripts/cre/environment/environment/chip_ingress_stack.go",
+  "line": 275,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 222,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 222,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 222,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 228,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 228,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 228,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 237,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 237,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/deployment/ccip/changeset/ccip-attestation-solana/cs_deploy_signer_registry_solana.go",
+  "line": 237,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/chainlink/operator_ui/install.go",
+  "line": 137,
+  "snippet": "requires login"
+}

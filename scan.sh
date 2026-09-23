@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-TARGETS_FILE="targets.txt"
+TARGETS_FILE="ingest.txt"
 RULE_FILE="$1" # Pass the validated rule file as an argument
 RESULTS_DIR="scan_results"
 

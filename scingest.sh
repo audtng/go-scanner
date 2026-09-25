@@ -25,11 +25,11 @@ QUERY="stars:>1+language:${LANGUAGE}"
 echo "[*] Querying GitHub API for top 500 highest-starred projects..."
 
 # 2. Loop through pages 1 to 5
-for PAGE in {1..5}; do
+for PAGE in {1}; do
   echo "    -> Fetching page $PAGE of 5..."
   
   # Append the &page parameter to the URL
-  API_URL="https://api.github.com/search/repositories?q=${QUERY}&sort=stars&order=desc&per_page=100&page=${PAGE}"
+  API_URL="https://api.github.com/search/repositories?q=${QUERY}&sort=stars&order=desc&per_page=10&page=${PAGE}"
 
   RESPONSE=$(curl -s -w "\n%{http_code}" \
     -H "Authorization: Bearer ${GITHUB_TOKEN}" \

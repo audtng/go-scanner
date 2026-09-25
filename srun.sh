@@ -21,7 +21,7 @@ while read -r REPO_URL; do
   REPO_NAME=$(basename -s .git "$REPO_URL")
   
   echo "=========================================="
-  echo "[*] Targeting: $REPO_NAME"
+  echo "[*] Working on : $REPO_NAME"
   
   # 1. Shallow clone (Depth 1 saves massive disk I/O and bandwidth)
   if ! git clone --depth 1 --quiet "$REPO_URL" "/tmp/$REPO_NAME"; then
@@ -40,7 +40,7 @@ while read -r REPO_URL; do
   if [ -f "$SCAN_OUT" ]; then
     HITS=$(jq '.results | length' "$SCAN_OUT")
     if [ "$HITS" -gt 0 ]; then
-      echo "[!] 🚨 VULNERABILITY FOUND: $HITS hits in $REPO_NAME!"
+      echo "Patterns Matched : $HITS hits in $REPO_NAME!"
       # Append the critical data to your master log
       echo "$REPO_URL" >> "$MASTER_LOG"
       jq '.results[] | {path: .path, line: .start.line, snippet: .extra.lines}' "$SCAN_OUT" >> "$MASTER_LOG"

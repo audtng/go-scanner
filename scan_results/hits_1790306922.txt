@@ -1,0 +1,851 @@
+https://github.com/avelino/awesome-go.git
+{
+  "path": "/tmp/awesome-go/.github/scripts/check-pr-diff/main.go",
+  "line": 378,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/awesome-go/.github/scripts/check-quality/main.go",
+  "line": 455,
+  "snippet": "requires login"
+}
+https://github.com/ollama/ollama.git
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 127,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 127,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 127,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 127,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 127,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 127,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 127,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 127,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 138,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 138,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 138,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 138,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 138,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 138,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 138,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 138,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 141,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 141,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 141,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 141,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 141,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 141,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/cmd/app/claude_desktop_installer_darwin.go",
+  "line": 141,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater.go",
+  "line": 231,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater.go",
+  "line": 245,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 184,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 184,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 184,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 184,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 184,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 184,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 184,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 184,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 242,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 242,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 242,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 242,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 242,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 242,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 336,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 336,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 336,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 336,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 336,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/app/updater/updater_darwin.go",
+  "line": 336,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/server/routes.go",
+  "line": 1761,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/server/routes.go",
+  "line": 1761,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/server/routes.go",
+  "line": 1761,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/server/routes.go",
+  "line": 1779,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/server/routes.go",
+  "line": 1779,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ollama/server/routes.go",
+  "line": 1779,
+  "snippet": "requires login"
+}
+https://github.com/golang/go.git
+{
+  "path": "/tmp/go/src/cmd/compile/internal/base/hashdebug.go",
+  "line": 403,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/cmd/compile/internal/ssa/compile.go",
+  "line": 64,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/cmd/compile/internal/ssa/rewrite.go",
+  "line": 1154,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/cmd/go/internal/doc/pkgsite.go",
+  "line": 119,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/cmd/go/internal/modfetch/codehost/svn.go",
+  "line": 149,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/cmd/go/internal/modfetch/codehost/svn.go",
+  "line": 149,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/cmd/go/internal/modfetch/codehost/svn.go",
+  "line": 149,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/cmd/go/internal/modfetch/codehost/svn.go",
+  "line": 149,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/cmd/go/internal/web/http.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/runtime/testdata/testfds/main.go",
+  "line": 15,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/runtime/testdata/testsuid/main.go",
+  "line": 19,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/go/src/testing/testing.go",
+  "line": 1638,
+  "snippet": "requires login"
+}
+https://github.com/JuliusBrussee/caveman.git
+{
+  "path": "/tmp/caveman/browse/cmd/caveman-browse/main.go",
+  "line": 77,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/caveman/browse/cmd/caveman-browse/main.go",
+  "line": 276,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/caveman/engine/cmd/caveman-engine/main.go",
+  "line": 758,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/caveman/mcp/cmd/caveman-mcp/main.go",
+  "line": 85,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/caveman/shrink/shrink.go",
+  "line": 91,
+  "snippet": "requires login"
+}
+https://github.com/infiniflow/ragflow.git
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2404,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2404,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2404,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2404,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2404,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2404,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2404,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2404,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2409,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2430,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2430,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2430,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2430,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2430,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2430,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2430,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2430,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2435,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2435,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2435,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2435,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2435,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/cli/user_command.go",
+  "line": 2435,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/harness/core/prebuilt/deep/deep.go",
+  "line": 145,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/ragflow/internal/harness/core/prebuilt/deep/deep.go",
+  "line": 183,
+  "snippet": "requires login"
+}
+https://github.com/gohugoio/hugo.git
+{
+  "path": "/tmp/hugo/commands/server.go",
+  "line": 707,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/hugo/commands/server.go",
+  "line": 1006,
+  "snippet": "requires login"
+}
+https://github.com/syncthing/syncthing.git
+{
+  "path": "/tmp/syncthing/cmd/syncthing/cli/utils.go",
+  "line": 81,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/syncthing/script/transifexdl.go",
+  "line": 63,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/syncthing/script/transifexdl.go",
+  "line": 63,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/syncthing/script/transifexdl.go",
+  "line": 83,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/syncthing/script/transifexdl.go",
+  "line": 83,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/syncthing/script/weblatedl.go",
+  "line": 87,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/syncthing/script/weblatedl.go",
+  "line": 87,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/syncthing/script/weblatedl.go",
+  "line": 87,
+  "snippet": "requires login"
+}
+https://github.com/moby/moby.git
+{
+  "path": "/tmp/moby/daemon/builder/dockerfile/copy.go",
+  "line": 400,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/graphdriver/windows/windows.go",
+  "line": 709,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/internal/image/tarexport/load.go",
+  "line": 94,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/libnetwork/networkdb/debug.go",
+  "line": 25,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/daemon/logger/syslog/syslog.go",
+  "line": 158,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/integration/plugin/logging/cmd/discard/driver.go",
+  "line": 40,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/integration/plugin/logging/cmd/discard/driver.go",
+  "line": 40,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/internal/testutil/daemon/daemon.go",
+  "line": 166,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/internal/testutil/daemon/daemon.go",
+  "line": 191,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/moby/internal/testutil/daemon/daemon.go",
+  "line": 197,
+  "snippet": "requires login"
+}
+https://github.com/prometheus/prometheus.git
+{
+  "path": "/tmp/prometheus/config/reload.go",
+  "line": 80,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/prometheus/config/reload.go",
+  "line": 80,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/prometheus/config/reload.go",
+  "line": 80,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/prometheus/config/reload.go",
+  "line": 80,
+  "snippet": "requires login"
+}
+https://github.com/traefik/traefik.git
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 155,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 155,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 155,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 281,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 289,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+{
+  "path": "/tmp/traefik/pkg/plugins/manager.go",
+  "line": 294,
+  "snippet": "requires login"
+}
+https://github.com/usememos/memos.git
+{
+  "path": "/tmp/memos/internal/profile/profile.go",
+  "line": 101,
+  "snippet": "requires login"
+}

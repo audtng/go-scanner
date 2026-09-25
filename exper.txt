@@ -1,0 +1,304 @@
+rules:
+  - id: go-http-path-traversal
+    mode: taint
+    severity: ERROR
+    message: Untrusted user input from an HTTP request or web framework flows into a filesystem operation without path traversal sanitization.
+    languages:
+      - go
+    metadata:
+      cwe:
+        - "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+      owasp:
+        - A01:2021 - Broken Access Control
+      category: security
+      confidence: HIGH
+      likelihood: HIGH
+      impact: HIGH
+    paths:
+      exclude:
+        - '*_test.go'
+        - test/**/*.go
+        - mock/**/*.go
+    options:
+      taint_assume_safe_booleans: true
+    pattern-sources:
+      - pattern: ($REQ : *http.Request).URL.Path
+      - pattern: ($REQ : *http.Request).URL.RawPath
+      - pattern: ($REQ : *http.Request).URL.Query().Get(...)
+      - pattern: ($REQ : *http.Request).FormValue(...)
+      - pattern: ($REQ : *http.Request).PostFormValue(...)
+      - pattern: ($REQ : *http.Request).PathValue(...)
+      - pattern: ($REQ : *http.Request).Header.Get(...)
+      - pattern: ($CTX : *gin.Context).Query(...)
+      - pattern: ($CTX : *gin.Context).Param(...)
+      - pattern: ($CTX : *gin.Context).PostForm(...)
+      - pattern: ($CTX : *gin.Context).GetHeader(...)
+      - pattern: ($CTX : echo.Context).FormValue(...)
+      - pattern: ($CTX : echo.Context).QueryParam(...)
+      - pattern: ($CTX : echo.Context).Param(...)
+      - pattern: ($CTX : *fiber.Ctx).Query(...)
+      - pattern: ($CTX : *fiber.Ctx).Params(...)
+      - pattern: ($CTX : *fiber.Ctx).FormValue(...)
+    pattern-propagators:
+      - from: $FROM
+        to: filepath.Join(...)
+        patterns:
+          - pattern: filepath.Join(..., $FROM, ...)
+      - from: $FROM
+        to: path.Join(...)
+        patterns:
+          - pattern: path.Join(..., $FROM, ...)
+      - from: $FROM
+        to: filepath.Clean(...)
+        patterns:
+          - pattern: filepath.Clean($FROM)
+      - from: $FROM
+        to: path.Clean(...)
+        patterns:
+          - pattern: path.Clean($FROM)
+      - from: $FROM
+        to: fmt.Sprintf(...)
+        patterns:
+          - pattern: fmt.Sprintf(..., $FROM, ...)
+      - from: $FROM
+        to: strings.TrimPrefix(...)
+        patterns:
+          - pattern: strings.TrimPrefix($FROM, ...)
+    pattern-sanitizers:
+      - pattern: filepath.Base(...)
+      - pattern: path.Base(...)
+      - pattern: securejoin.SecureJoin(...)
+      - by-side-effect: true
+        patterns:
+          - pattern-either:
+              - pattern: filepath.IsLocal($X)
+              - pattern: fs.ValidPath($X)
+              - pattern: io/fs.ValidPath($X)
+          - focus-metavariable: $X
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: os.Open($PATH)
+              - pattern: os.OpenFile($PATH, ...)
+              - pattern: os.ReadFile($PATH)
+              - pattern: os.WriteFile($PATH, ...)
+              - pattern: os.Create($PATH)
+              - pattern: os.CreateTemp(..., $PATH)
+              - pattern: os.Remove($PATH)
+              - pattern: os.RemoveAll($PATH)
+              - pattern: os.Mkdir($PATH, ...)
+              - pattern: os.MkdirAll($PATH, ...)
+              - pattern: os.Stat($PATH)
+              - pattern: os.Lstat($PATH)
+              - pattern: http.Dir($PATH)
+              - pattern: http.ServeFile($W, $REQ, $PATH)
+              - pattern: ($CTX : *gin.Context).File($PATH)
+              - pattern: ($CTX : *gin.Context).FileAttachment($PATH, ...)
+              - pattern: ($CTX : echo.Context).File($PATH)
+              - pattern: ($CTX : echo.Context).Attachment($PATH, ...)
+              - pattern: ($CTX : *fiber.Ctx).SendFile($PATH, ...)
+              - pattern: ($CTX : *fiber.Ctx).Download($PATH, ...)
+          - focus-metavariable: $PATH
+
+  - id: go-archive-path-traversal
+    mode: taint
+    severity: ERROR
+    message: Untrusted archive entry path extracted from archive headers can lead to path traversal (Zip Slip / Tar Slip).
+    languages:
+      - go
+    metadata:
+      cwe:
+        - "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+      owasp:
+        - A01:2021 - Broken Access Control
+      category: security
+      confidence: HIGH
+      likelihood: MEDIUM
+      impact: HIGH
+    paths:
+      exclude:
+        - '*_test.go'
+        - test/**/*.go
+        - mock/**/*.go
+    options:
+      taint_assume_safe_booleans: true
+    pattern-sources:
+      - pattern: ($FILE : *zip.File).Name
+      - pattern: ($FILE : zip.File).Name
+      - pattern: ($FILE : *zip.FileHeader).Name
+      - pattern: ($FILE : zip.FileHeader).Name
+      - pattern: ($HDR : *tar.Header).Name
+      - pattern: ($HDR : tar.Header).Name
+      - pattern: ($HDR : *tar.Header).Linkname
+      - pattern: ($HDR : tar.Header).Linkname
+      - pattern: ($READER : *zip.Reader).File
+      - pattern: ($READER : *zip.ReadCloser).File
+      - patterns:
+          - pattern: $TR.Next()
+          - pattern-inside: |
+              $TR := tar.NewReader(...)
+              ...
+    pattern-propagators:
+      - from: $FROM
+        to: filepath.Join(...)
+        patterns:
+          - pattern: filepath.Join(..., $FROM, ...)
+      - from: $FROM
+        to: path.Join(...)
+        patterns:
+          - pattern: path.Join(..., $FROM, ...)
+      - from: $FROM
+        to: filepath.Clean(...)
+        patterns:
+          - pattern: filepath.Clean($FROM)
+    pattern-sanitizers:
+      - pattern: filepath.Base(...)
+      - pattern: securejoin.SecureJoin(...)
+      - by-side-effect: true
+        patterns:
+          - pattern-either:
+              - pattern: filepath.IsLocal($X)
+              - pattern: strings.HasPrefix($X, ...)
+              - pattern: filepath.Rel(..., $X)
+          - focus-metavariable: $X
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: os.OpenFile($PATH, ...)
+              - pattern: os.Open($PATH)
+              - pattern: os.Create($PATH)
+              - pattern: os.WriteFile($PATH, ...)
+              - pattern: os.ReadFile($PATH)
+              - pattern: os.Remove($PATH)
+              - pattern: os.RemoveAll($PATH)
+              - pattern: os.Mkdir($PATH, ...)
+              - pattern: os.MkdirAll($PATH, ...)
+              - pattern: os.Symlink(..., $PATH)
+              - pattern: os.Link(..., $PATH)
+          - focus-metavariable: $PATH
+
+  - id: go-unmarshaled-path-traversal
+    mode: taint
+    severity: ERROR
+    message: Untrusted path extracted from unmarshaled configuration data is used in a filesystem operation without validation.
+    languages:
+      - go
+    metadata:
+      cwe:
+        - "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+      owasp:
+        - A01:2021 - Broken Access Control
+      category: security
+      confidence: MEDIUM
+      likelihood: MEDIUM
+      impact: HIGH
+    paths:
+      exclude:
+        - '*_test.go'
+        - test/**/*.go
+        - mock/**/*.go
+    options:
+      taint_assume_safe_booleans: true
+    pattern-sources:
+      - by-side-effect: true
+        patterns:
+          - pattern-either:
+              - pattern: json.Unmarshal($DATA, &$TARGET)
+              - pattern: yaml.Unmarshal($DATA, &$TARGET)
+              - pattern: xml.Unmarshal($DATA, &$TARGET)
+              - pattern: toml.Unmarshal($DATA, &$TARGET)
+              - pattern: ($DEC : *json.Decoder).Decode(&$TARGET)
+              - pattern: ($DEC : *xml.Decoder).Decode(&$TARGET)
+          - focus-metavariable: $TARGET
+    pattern-propagators:
+      - from: $FROM
+        to: filepath.Join(...)
+        patterns:
+          - pattern: filepath.Join(..., $FROM, ...)
+      - from: $FROM
+        to: filepath.Clean(...)
+        patterns:
+          - pattern: filepath.Clean($FROM)
+    pattern-sanitizers:
+      - pattern: filepath.Base(...)
+      - pattern: securejoin.SecureJoin(...)
+      - by-side-effect: true
+        patterns:
+          - pattern-either:
+              - pattern: filepath.IsLocal($X)
+              - pattern: fs.ValidPath($X)
+          - focus-metavariable: $X
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: os.OpenFile($PATH, ...)
+              - pattern: os.Open($PATH)
+              - pattern: os.Create($PATH)
+              - pattern: os.ReadFile($PATH)
+              - pattern: os.WriteFile($PATH, ...)
+              - pattern: os.Remove($PATH)
+              - pattern: os.RemoveAll($PATH)
+          - focus-metavariable: $PATH
+
+  - id: go-exec-untrusted-config-injection
+    mode: taint
+    severity: ERROR
+    message: Untrusted data from parsed configuration is passed into command execution, potentially leading to command or argument injection.
+    languages:
+      - go
+    metadata:
+      cwe:
+        - "CWE-78: Improper Neutralization of Special Elements used in an OS Command"
+      owasp:
+        - A03:2021 - Injection
+      category: security
+      confidence: HIGH
+      impact: HIGH
+      likelihood: MEDIUM
+    paths:
+      exclude:
+        - '*_test.go'
+        - test/**/*.go
+        - mock/**/*.go
+    options:
+      taint_assume_safe_booleans: true
+    pattern-sources:
+      - by-side-effect: true
+        patterns:
+          - pattern-either:
+              - pattern: json.Unmarshal($DATA, &$TARGET)
+              - pattern: yaml.Unmarshal($DATA, &$TARGET)
+              - pattern: xml.Unmarshal($DATA, &$TARGET)
+              - pattern: toml.Unmarshal($DATA, &$TARGET)
+          - focus-metavariable: $TARGET
+    pattern-propagators:
+      - from: $FROM
+        to: fmt.Sprintf(...)
+        patterns:
+          - pattern: fmt.Sprintf(..., $FROM, ...)
+      - from: $FROM
+        to: strings.Join(...)
+        patterns:
+          - pattern: strings.Join(..., $FROM, ...)
+      - from: $FROM
+        to: append(...)
+        patterns:
+          - pattern: append(..., $FROM, ...)
+    pattern-sanitizers:
+      - pattern: strconv.Atoi(...)
+      - pattern: strconv.ParseInt(...)
+      - pattern: strconv.ParseUint(...)
+      - pattern: strconv.ParseFloat(...)
+      - pattern: strconv.ParseBool(...)
+    pattern-sinks:
+      - patterns:
+          - pattern-either:
+              - pattern: exec.Command($ARG, ...)
+              - pattern: exec.Command(..., $ARG, ...)
+              - pattern: exec.CommandContext($CTX, $ARG, ...)
+              - pattern: exec.CommandContext($CTX, ..., $ARG, ...)
+              - pattern: os.StartProcess($ARG, ...)
+              - pattern: os.StartProcess(..., $ARG, ...)
+              - pattern: syscall.Exec($ARG, ...)
+              - pattern: syscall.Exec(..., $ARG, ...)
+          - focus-metavariable: $ARG
